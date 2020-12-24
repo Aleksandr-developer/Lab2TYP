@@ -56,7 +56,7 @@ def matrix3_consrtucntion(elements, size):
         str_size = 0
         while str_size < size:
             item.append(0)
-            str_size += 1
+
 
     for key in elements.keys():
         nx = int(key / size)
