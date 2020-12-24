@@ -34,7 +34,8 @@ def tasks(clients, matrix1, matrix2, current_elem):
                         data = []
                         data.append(matrix1)
                         data.append(matrix2)
-
+                        data.append(size)
+                        data.append(elem)
                         try:
                             client.send(pickle.dumps(data))
                             current_elem.update({elem: False})
