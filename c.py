@@ -33,7 +33,8 @@ while True:
     data = client_socket.recv(10000000)
 
     data=pickle.loads(data)
-
+    matrix1 = data[0]
+    matrix2 = data[1]
     size = data[2]
     k = data[3]
     matrix_worker(matrix1, matrix2, size, k)
